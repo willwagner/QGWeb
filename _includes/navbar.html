@@ -5,6 +5,8 @@
         <div class="navbar-brand">
             <a class="navbar-item"
                 href="{% if page.layout == 'default' %}{{site.url}}{{site.baseurl}}/#{% else %}{{site.url}}{{site.baseurl}}/{% endif %}">
+                <figure class="image is-16x16"> <img class="is-rounded" src="{{site.baseurl}}{{site.site-image}}"></figure>
+                &nbsp;
                 <strong>{{site.title}}</strong>
             </a>
             <div class="navbar-burger" data-target="navbar-menu">
