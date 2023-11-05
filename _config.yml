@@ -24,19 +24,19 @@ heroimage: /assets/images/background.png
 # Social Media and Contact
 # If you don't want to use any icon, you can leave them blank.
 email: will@quantifiedgolf.com
-facebook_username: /
+facebook_username: 
 twitter_username: QuantifiedGolf
 instagram_username: QuantifiedGolf
 #linkedin_username: thedevslot
 github_username:  willwagner
 #youtube_channel_id: UCk_93NXYP-U_AOB5GfWlOow
-reddit_username: /
-behance_username: /
-dribbble_username: /
-spotify_username: /
+reddit_username: 
+behance_username: 
+dribbble_username:
+spotify_username:
 
 # Google Analytics
-google-analytics: UA-163806439-1
+google-analytics: G-LP97KRWVVZ
 
 # Disqus
 disqus-shortname: quantified-golf

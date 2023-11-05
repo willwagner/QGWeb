@@ -76,3 +76,9 @@ hr {
 .hero-body {
     padding-top: 0;
 }
+
+.horizontal-list, .horizontal-list li {
+    display: inline-block;
+    padding: 4px 4px;
+    list-style-type: circle;
+}

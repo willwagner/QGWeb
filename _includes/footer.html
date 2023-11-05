@@ -6,28 +6,9 @@
     <!--Footer Main Section-->
     <div class="has-background-grey-darker">
         <div class="container columns">
-            <!--Name Section-->
-            <div class="column has-text-left-desktop has-text-centered-mobile">
-                <a href="{{site.url}}{{site.baseurl}}/#about">
-                    <div class="columns">
-                        <div class="column is-one-fifth-desktop is-one-fifth-fullhd is-one-quarter-tablet">
-                            <figure class="image is-64x64">
-                                <img class="is-rounded" src="{{site.baseurl}}{{site.author-image}}">
-                            </figure>
-                        </div>
-                        <div class="column is-marginless">
-                            <h5 class="has-text-grey-lighter">{{site.author-name}}</h5>
-                            <div class="content has-text-grey">
-                                <p>{{site.author-about | truncate: 75 }}</p>
-                            </div>
-                        </div>
-                    </div>
-                </a>
-            </div>
-
             <!--Link Section-->
             <div class="column has-text-white">
-                <h3>More Links</h3>
+                <ul class="horizontal-list">
                 {% for sitepage in site.html_pages offset: 4 %}
                 {% unless sitepage.url == '/'  limit: 2 %}
                 <li>
@@ -38,6 +19,7 @@
                 <li>
                     <a target="_blank" href="{{site.url}}{{site.baseurl}}/feed.xml">Subscribe via RSS</a>
                 </li>
+                </ul>
             </div>
 
             <!--Blog-post Section-->
