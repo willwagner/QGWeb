@@ -1,0 +1,16 @@
+    <section class="hero is-fullheight has-background-white-ter" id="blog">
+            <!-- Left side -->
+            <div class="container">
+                <p class="subtitle is-uppercase has-text-weight-medium has-text-grey">Recent Articles</p>
+            </div>
+        <!--Blog Cards Section-->
+        {% for post in site.posts offset: 0 limit:3 %}
+            {% include blog-card.html %}
+        {% endfor %}
+        </div>
+    <div class="container">
+      <a href="{{site.url}}{{site.baseurl}}/blog"
+        class="button is-black is-rounded is-outlined is-uppercase has-text-weight-normal">Read More</a>
+      </a>
+    </div>
+    </section>
