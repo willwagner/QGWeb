@@ -5,7 +5,7 @@
     </div>
     <!--Footer Main Section-->
     <div class="has-background-grey-darker">
-        <div class="container columns">
+        <div class="container columns links">
             <!--Link Section-->
             <div class="column has-text-white">
                 <ul class="horizontal-list">
@@ -13,6 +13,7 @@
                 {% unless sitepage.url == '/'  limit: 2 %}
                 <li>
                     <a href="{{sitepage.url | absolute_url}}">{{sitepage.title}}</a>
+                    <span>&nbsp;&bull;</span>
                 </li>
                 {% endunless %}
                 {% endfor %}
@@ -22,18 +23,9 @@
                 </ul>
             </div>
 
-            <!--Blog-post Section-->
-            <div class="column has-text-white">
-                <h3>Recent Posts</h3>
-                {% for post in site.posts offset: 0 limit:3 %}
-                <li>
-                    <a href="{{post.url | absolute_url}}">{{post.title}}</a>
-                </li>
-                {% endfor %}
-            </div>
         </div>
     </div>
-    <div class="has-background-black has-text-centered has-text-white" id="credits">
-        <i class="far fa-copyright"></i> {{ "now" | date: "%Y" }} | <a href="https://github.com/thedevslot/WhatATheme" target="_blank" rel="noopener noreferrer">WhatATheme</a> - A Theme made with <i class="fas fa-heart has-text-danger"></i> by <a href="https://www.twitter.com/thedevslot" target="_blank" rel="noopener noreferrer">TheDevsLot</a> Powered by <a href="https://jekyllrb.com/" target="_blank">Jekyll</a>
+    <div class="has-text-centered is-size-7 has-background-grey-darker has-text-centered has-text-white" id="credits">
+        <i class="far fa-copyright"></i> {{ "now" | date: "%Y" }} | <a href="https://github.com/thedevslot/WhatATheme" target="_blank" rel="noopener noreferrer">WhatATheme</a>  by <a href="https://www.twitter.com/thedevslot" target="_blank" rel="noopener noreferrer">TheDevsLot</a> Powered by <a href="https://jekyllrb.com/" target="_blank">Jekyll</a>
     </div>
 </footer>
