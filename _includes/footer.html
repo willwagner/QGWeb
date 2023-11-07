@@ -12,13 +12,21 @@
                 {% for sitepage in site.html_pages offset: 4 %}
                 {% unless sitepage.url == '/'  limit: 2 %}
                 <li>
-                    <a href="{{sitepage.url | absolute_url}}">{{sitepage.title}}</a>
+                    <a href="{{sitepage.url | absolute_url}}">{{sitepage.title | upcase}}</a>
                     <span>&nbsp;&bull;</span>
                 </li>
                 {% endunless %}
                 {% endfor %}
                 <li>
-                    <a target="_blank" href="{{site.url}}{{site.baseurl}}/feed.xml">Subscribe via RSS</a>
+                    <a target="_blank" href="{{site.url}}{{site.baseurl}}/#about">ABOUT</a>
+                    <span>&nbsp;&bull;</span>
+                </li>
+                <li>
+                    <a target="_blank" href="{{site.url}}{{site.baseurl}}/#contact">CONTACT</a>
+                    <span>&nbsp;&bull;</span>
+                </li>
+                <li>
+                    <a target="_blank" href="{{site.url}}{{site.baseurl}}/feed.xml">RSS</a>
                 </li>
                 </ul>
             </div>
