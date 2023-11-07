@@ -68,6 +68,11 @@ permalink: "blog/:title"
 compress_html:
   clippings: all
 
+# Categories
+collections:
+  category:
+    output: true
+
 # Defaults
 defaults:
   -
@@ -84,6 +89,11 @@ defaults:
       type: 'pages'
     values:
       layout: page
+  -
+    scope:
+      type: 'category'
+    values:
+      layout: category
 
 # Exclude
 exclude:

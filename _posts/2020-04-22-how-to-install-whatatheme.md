@@ -8,6 +8,7 @@ tags:
 - how to
 - setup
 - theme
+category: side-saddle
 ---
 
 # What is WhatATheme?
