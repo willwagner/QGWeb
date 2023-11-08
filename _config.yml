@@ -43,7 +43,7 @@ disqus-shortname: quantified-golf
 
 # Name of the Author
 author-name: Will Wagner
-author-image: /assets/images/logo.png
+author-image: /assets/images/will.jpg
 # URL for the Image of the Author
 #author-image: https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_960_720.png
 # 60 Words About the Author
@@ -107,3 +107,6 @@ exclude:
   - vendor/cache/
   - vendor/gems/
   - vendor/ruby/
+
+jekyll_admin:
+  homepage: "posts"

@@ -1,0 +1,56 @@
+---
+layout: compress
+---
+
+<!DOCTYPE html>
+<html>
+{% include head.html %}
+
+<body>
+    {% include navbar.html %}
+    <section class="section">
+        <div class="container has-text-centered" id="page-section">
+            <div class="section">
+                <h1 class="title is-1 is-uppercase has-text-weight-bold">
+                    About
+                </h1>
+                <hr class="has-background-black">
+                <div class="content is-marginless">
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="has-text-centered" id="about">
+            <div class="container">
+                <div class="columns">
+                    <div class="column is-one-fifth-desktop is-one-fifth-tablet is-one-fifth-fullhd">
+                        <figure class="image">
+                            <img class="is-rounded" src="{{site.baseurl}}{{site.author-image}}" alt="{{site.author-name}}">
+                        </figure>
+                    </div>
+                    <div class="column content  has-text-left-desktop has-text-left-tablet has-text-left-fullhd has-text-left-widescreen">
+                    <p>Welcome to Quantified Golf!  My name is Will Wagner, a long time resident of the San Franscisco Bay Area for which I've called home for over 30 years.  I've been very fortunate to have a career in software development and managing teams and products.  Along with work, family, and travel, golf is a passon of mine.</p>
+                    <p>I started golfing when I was a kid, and much of my teenage years were spent either working, practicing, or playing golf.  My parents were golfer too, and I have many fond memories playing skins with my dad and his friends</p>
+                    <p>I've taken long hiatus both to raise a family and focus on my careeer, but now in my mid-50's, the passion for the sport has been reignited</p>
+                    <p>Quantified Golf is a resource for the game of golf outside of the golf swing.  Curiosity and an engineering mindset helped me to contribute to great software products and companies, and I believe those tools can also help you get better at golf</p>
+                    <p>You won't find golf swing tips here, at least nothing more than a link to people far better at understanding the golf swing.  However, I think taking a data driven approach to golf can help you make better decisions both on the course, as well as you can practice most effectively.</p>
+                    <p>I hope you find this site helpful, and even if you don't agree with all of it, I hope it at least gives you fuel to reassess your own game and practice strategies</p>
+                    <p>I wish you good golf and great memories!</p>
+
+                        <br>
+                        <div class="container columns is-centered">
+                            <div>
+                                <a href="{{site.url}}{{site.baseurl}}/#contact"
+                                    class="button is-rounded is-uppercase has-text-weight-normal is-black is-outlined">Contact
+                                    Me</a>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+    </section>
+    <!--Footer begins here-->
+    {% include footer.html %}
+</body>
+
+</html>
