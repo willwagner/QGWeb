@@ -5,7 +5,7 @@
         <div class="navbar-brand">
             <a class="navbar-item"
                 href="{% if page.layout == 'default' %}{{site.url}}{{site.baseurl}}/#{% else %}{{site.url}}{{site.baseurl}}/{% endif %}">
-                <figure class="image is-16x16"> <img class="is-rounded" src="{{site.baseurl}}{{site.site-image}}"></figure>
+                <figure class="image is-16x16"> <img class="is-rounded" src="{{site.baseurl}}{{site.site-image}}" alt="{{site.title}} logo"></figure>
                 &nbsp;
                 <strong>{{site.title}}</strong>
             </a>
@@ -32,6 +32,9 @@
 
                 <a class="navbar-item {% if page.layout == 'blog' %}is-active{% endif %}"
                     href="{{site.url}}{{site.baseurl}}/blog">BLOG</a>
+                    
+                <a class="navbar-item ios-app-nav {% if page.title == 'iOS App' %}is-active{% endif %}"
+                    href="{{site.url}}{{site.baseurl}}/ios-app">Get Quantified Golf App!</a>
             </div>
 
         </div>
