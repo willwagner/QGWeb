@@ -1,10 +1,12 @@
 ---
 title: Privacy Policy
 layout: page
+version: 1.0.0
 ---
 
 # Privacy Policy
 
+**Version:** {{page.version}}  
 **Last Updated:** {{ "now" | date: "%B %d, %Y" }}
 
 This Privacy Policy describes how Will Wagner ("we," "us," or "our") collects, uses, and shares information when you use the Quantified Golf mobile application ("App").
