@@ -3,20 +3,26 @@ layout: compress
 ---
 
 <!DOCTYPE html>
-<html>
+<html lang="en">
 {% include head.html %}
 
 <body>
+    <a href="#page-section" class="skip-link">Skip to main content</a>
     {% include navbar.html %}
     <section class="hero is-fullheight">
         <div class="hero-body">
-            <div class="container has-text-centered" id="page-section">
+            <div class="container has-text-centered {% if page.title == 'Quantified Golf iOS App' %}page-ios-app{% endif %}" id="page-section">
                 <div class="section">
                     <h1 class="title is-1 is-uppercase has-text-weight-bold">
                         {{page.title}}
                     </h1>
+                    {% if page.subtitle %}
+                    <h2 class="subtitle is-4 has-text-grey-dark" style="margin-top: 1rem;">
+                        {{page.subtitle}}
+                    </h2>
+                    {% endif %}
                     <hr class="has-background-black">
-                    <div class="content is-marginless">
+                    <div class="content is-marginless {% if page.title == 'Quantified Golf iOS App' %}has-text-left{% endif %}">
                         {{ content }}
                     </div>
                 </div>

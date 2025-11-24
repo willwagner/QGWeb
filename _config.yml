@@ -13,7 +13,7 @@ description: Better Golfing Through Data
 # URL of Image of the Site
 site-image: /assets/images/logo.png
 # Keywords of the Site
-site-keywords: Site, Template, Theme
+site-keywords: golf, quantified golf, golf data, golf analytics, golf putting, golf practice, golf theory, golf statistics
 # URL for the Image of custom Favicon
 favicon-url: /assets/images/favicon.ico
 
@@ -23,7 +23,7 @@ heroimage: /assets/images/background.png
 
 # Social Media and Contact
 # If you don't want to use any icon, you can leave them blank.
-email: will@quantifiedgolf.com
+email: support@quantifiedgolf.com
 facebook_username: 
 twitter_username: QuantifiedGolf
 instagram_username: QuantifiedGolf

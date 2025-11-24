@@ -5,6 +5,10 @@
 
 #navbar {
     opacity: 0.95;
+    
+    .navbar-end {
+        padding: 0.5rem 1rem !important;
+    }
 }
 
 .is-active {
@@ -30,6 +34,37 @@ a.navbar-item.is-active {
     &:hover {
         background-color: rgba($color: #fff, $alpha: 0.25) !important;
         color: grey;
+    }
+}
+
+// iOS App navbar item - button styling with light blue
+a.navbar-item.ios-app-nav {
+    color: #5BA3F5 !important; // iOS-style light blue
+    font-weight: 600;
+    background-color: rgba($color: #5BA3F5, $alpha: 0.15) !important;
+    border: 2px solid #5BA3F5 !important;
+    border-radius: 0.375rem !important;
+    padding: 0.5rem 1rem !important;
+    margin: 0 0.5rem !important;
+    transition: all 0.25s ease !important;
+    
+    &:hover {
+        background-color: rgba($color: #5BA3F5, $alpha: 0.3) !important;
+        color: #FFFFFF !important;
+        border-color: #87CEEB !important;
+        transform: translateY(-1px);
+        box-shadow: 0 2px 8px rgba($color: #5BA3F5, $alpha: 0.4);
+    }
+    
+    &.is-active {
+        background-color: rgba($color: #5BA3F5, $alpha: 0.4) !important;
+        color: #FFFFFF !important;
+        border-color: #87CEEB !important;
+        
+        &:hover {
+            background-color: rgba($color: #5BA3F5, $alpha: 0.5) !important;
+            border-color: #B0E0E6 !important;
+        }
     }
 }
 
@@ -351,5 +386,28 @@ a.navbar-item.is-active {
         ul, ol, blockquote {
             display: inline-block;
         }
+    }
+}
+
+// iOS App page specific styles
+.page-ios-app {
+    #page-section .section {
+        padding-bottom: 1.5rem !important;
+    }
+    
+    .columns {
+        margin-top: 0 !important;
+        margin-bottom: 0 !important;
+    }
+    
+    .columns .column {
+        padding-top: 0 !important;
+        padding-left: 0.75rem !important;
+        padding-right: 0.75rem !important;
+    }
+    
+    .columns .column .section:first-child {
+        padding-top: 0 !important;
+        margin-top: 0 !important;
     }
 }

@@ -1,7 +1,64 @@
 <head>
     {% include meta.html %}
     <title>{{site.title}}</title>
+    
+    <!-- Preconnect for performance -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://kit.fontawesome.com">
+    <link rel="preconnect" href="https://www.googletagmanager.com">
+    
     <link rel="stylesheet" href="{% if site.baseurl %}{{site.baseurl}}{% else %}{% endif %}/assets/css/style.css">
     <script src="https://kit.fontawesome.com/6a97161b76.js" crossorigin="anonymous"></script>
     <link rel="shortcut icon" href="{% if site.favicon-url %}{{site.baseurl}}{{site.favicon-url}}{% else %}{{site.baseurl}}{{ 'assets/images/logo.png' | absolute_url }}{% endif %}" type="image/x-icon">
+    
+    {% if page.layout == 'post' %}
+    <!-- Structured Data (JSON-LD) for Blog Posts -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BlogPosting",
+      "headline": "{{ page.title | escape }}",
+      "description": "{{ page.description | default: site.description | strip_html | strip_newlines | escape }}",
+      "image": "{{ site.url }}{{ site.baseurl }}{{ page.post-image | default: site.site-image }}",
+      "author": {
+        "@type": "Person",
+        "name": "{{ site.author-name }}",
+        "url": "{{ site.author-url | default: site.url }}{{ site.baseurl }}"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "{{ site.title }}",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "{{ site.url }}{{ site.baseurl }}{{ site.site-image }}"
+        }
+      },
+      "datePublished": "{{ page.date | date_to_xmlschema }}",
+      "dateModified": "{{ page.last_modified_at | default: page.date | date_to_xmlschema }}",
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "{{ site.url }}{{ site.baseurl }}{{ page.url }}"
+      }
+    }
+    </script>
+    {% endif %}
+    
+    {% if page.layout == 'default' %}
+    <!-- Structured Data (JSON-LD) for Website -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebSite",
+      "name": "{{ site.title }}",
+      "description": "{{ site.description | escape }}",
+      "url": "{{ site.url }}{{ site.baseurl }}",
+      "author": {
+        "@type": "Person",
+        "name": "{{ site.author-name }}",
+        "url": "{{ site.author-url | default: site.url }}{{ site.baseurl }}"
+      }
+    }
+    </script>
+    {% endif %}
 </head>
