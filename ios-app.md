@@ -42,8 +42,8 @@ layout: page
             
             <div class="content">
                 <ul>
-                    <li><strong>Track your practice sessions</strong> - Record and monitor your practice time and routines</li>
-                    <li><strong>Analyze putting performance</strong> - Get detailed insights into your putting statistics</li>
+                    <li><strong>Track your practice, play, and tournament rounds</strong> - Record and monitor your golf game from tee to green and range to club championship.</li>
+                    <li><strong>Analyze your golf performance</strong> - Get detailed insights into your game.</li>
                     <li><strong>Monitor your golf statistics</strong> - Track scores, distances, and other key metrics</li>
                     <li><strong>Get personalized insights</strong> - Receive data-driven recommendations to improve your game</li>
                 </ul>
