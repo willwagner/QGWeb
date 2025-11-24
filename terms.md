@@ -1,10 +1,12 @@
 ---
 title: Terms of Use
 layout: page
+version: 1.0.0
 ---
 
 # Terms of Use
 
+**Version:** {{page.version}}  
 **Last Updated:** {{ "now" | date: "%B %d, %Y" }}
 
 These Terms of Use ("Terms") govern your use of the Quantified Golf mobile application ("App") operated by Will Wagner ("we," "us," or "our"). By downloading, installing, or using the App, you agree to be bound by these Terms.
