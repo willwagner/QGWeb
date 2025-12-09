@@ -24,7 +24,7 @@ layout: page
             </p>
             
             <div class="has-text-centered">
-                <a href="https://apps.apple.com/app/quantified-golf/id1234567890" 
+                <a href="https://apps.apple.com/us/app/quantified-golf-app/id6755897826" 
                    class="button is-large is-rounded" 
                    style="background-color: #5BA3F5; color: white; font-weight: 600; padding: 1rem 2rem;">
                     Download from the App Store
