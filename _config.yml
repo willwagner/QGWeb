@@ -108,5 +108,9 @@ exclude:
   - vendor/gems/
   - vendor/ruby/
 
+# Include (files/directories that start with . are excluded by default)
+include:
+  - .well-known
+
 jekyll_admin:
   homepage: "posts"
