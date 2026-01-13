@@ -1,10 +1,11 @@
 ---
-title: Quantified Golf iOS App
+title: Quantified Golf Analytics iOS App
 subtitle: Download the app for free
 layout: page
+permalink: /ios-app/
 ---
 
-<div class="columns" style="align-items: flex-start; margin-top: -3rem !important;">
+<div class="columns" style="align-items: flex-start; margin-top: 2rem !important;">
     <!-- Left Column: Download and Legal -->
     <div class="column is-half-desktop is-half-tablet has-text-left">
         <!-- Download Section -->
