@@ -13,7 +13,7 @@ layout: compress
         <div class="hero-body">
             <div class="container has-text-centered {% if page.title == 'Quantified Golf iOS App' %}page-ios-app{% endif %}" id="page-section">
                 <div class="section">
-                    <h1 class="title is-1 is-uppercase has-text-weight-bold" {% if page.title == 'Quantified Golf iOS App' %}style="padding-top: 2rem;"{% endif %}>
+                    <h1 class="title is-1 is-uppercase has-text-weight-bold" {% if page.title == 'Quantified Golf iOS App' or page.title == 'Quantified Golf Analytics iOS App' or page.title == 'Birdie Tracker iOS App' or page.title == 'Privacy Policy' or page.title == 'Terms of Use' or page.title contains 'Birdie Tracker Privacy Policy' or page.title contains 'Birdie Tracker Terms of Service' %}style="padding-top: 3rem;"{% endif %}>
                         {{page.title}}
                     </h1>
                     {% if page.subtitle %}
@@ -22,7 +22,7 @@ layout: compress
                     </h2>
                     {% endif %}
                     <hr class="has-background-black">
-                    <div class="content is-marginless {% if page.title == 'Quantified Golf iOS App' %}has-text-left{% endif %}">
+                    <div class="content is-marginless {% if page.title == 'Quantified Golf iOS App' or page.title contains 'Birdie Tracker' or page.title == 'Privacy Policy' or page.title == 'Terms of Use' %}has-text-left{% endif %}">
                         {{ content }}
                     </div>
                 </div>
