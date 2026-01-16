@@ -25,13 +25,13 @@ When you create an account, we collect:
 To provide the core functionality of the Service, we collect and store:
 
 - **Golf scores** (birdies, eagles, pars, etc.) with associated:
-    - Course information (name, location via Google Places API)
-    - Date and time of the score
-    - Hole number
-    - Score value
+  - Course information (name, location via Google Places API)
+  - Date and time of the score
+  - Hole number
+  - Score value
 - **Course information** you add or search for, including:
-    - Course names
-    - Location data (via Google Places API place IDs)
+  - Course names
+  - Location data (via Google Places API place IDs)
 
 ### 1.3 Group and Social Features
 If you participate in groups, we collect:
@@ -85,20 +85,20 @@ When you join a group or share scores with a group:
 We use the following third-party services that may have access to your data:
 
 - **Google Firebase** (Firestore, Authentication, Cloud Messaging, Analytics)
-    - Used for: Data storage, user authentication, push notifications, analytics
-    - Privacy Policy: https://firebase.google.com/support/privacy
+  - Used for: Data storage, user authentication, push notifications, analytics
+  - Privacy Policy: https://firebase.google.com/support/privacy
   
 - **Google Places API**
-    - Used for: Golf course search and location services
-    - Privacy Policy: https://policies.google.com/privacy
+  - Used for: Golf course search and location services
+  - Privacy Policy: https://policies.google.com/privacy
 
 - **Apple Sign In**
-    - Used for: User authentication
-    - Privacy Policy: https://www.apple.com/privacy/
+  - Used for: User authentication
+  - Privacy Policy: https://www.apple.com/privacy/
 
 - **Google Sign In**
-    - Used for: User authentication
-    - Privacy Policy: https://policies.google.com/privacy
+  - Used for: User authentication
+  - Privacy Policy: https://policies.google.com/privacy
 
 ### 4.3 Analytics and Usage Tracking
 We use Firebase Analytics to understand how users interact with the Service and improve the app experience. This service collects:
