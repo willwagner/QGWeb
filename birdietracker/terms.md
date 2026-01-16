@@ -43,10 +43,10 @@ Birdie Tracker is a mobile application that allows users to:
 You agree not to:
 - Use the Service for any illegal purpose or in violation of any laws
 - Post, upload, or transmit any content that is:
-  - Offensive, abusive, harassing, or defamatory
-  - Infringing on intellectual property rights
-  - Containing viruses or malicious code
-  - Spam or unsolicited communications
+    - Offensive, abusive, harassing, or defamatory
+    - Infringing on intellectual property rights
+    - Containing viruses or malicious code
+    - Spam or unsolicited communications
 - Impersonate any person or entity
 - Interfere with or disrupt the Service or servers
 - Attempt to gain unauthorized access to any part of the Service
