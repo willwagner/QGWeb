@@ -125,12 +125,12 @@ You may not use the Service:
 ## 11. Third-Party Services
 
 The Service integrates with third-party services:
-- **Firebase** (Google): For data storage, authentication, and push notifications
+- **Firebase** (Google): For data storage, authentication, push notifications, and analytics
 - **Google Places API**: For golf course search functionality
 - **Apple Sign In**: For user authentication
 - **Google Sign In**: For user authentication
 
-These services have their own terms of service and privacy policies. Your use of these services is subject to their respective terms.
+These services have their own terms of service and privacy policies. Your use of these services is subject to their respective terms. For details about data collection and analytics, please see our Privacy Policy.
 
 ## 12. Disclaimers
 
