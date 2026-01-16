@@ -42,10 +42,11 @@ If you participate in groups, we collect:
 ### 1.4 Device and Technical Information
 To provide and improve the Service, we automatically collect:
 - **Device information** (device type, operating system version)
-- **App usage data** (features used, session duration)
+- **App usage data** (features used, session duration, user interactions with features)
 - **Push notification tokens** (to send you notifications about group activity, invitations, etc.)
 - **Crash reports and error logs** (to identify and fix technical issues)
 - **IP address** (collected by our service providers for security and analytics)
+- **Analytics events** (anonymized tracking of user interactions, such as viewing upgrade banners, accessing paywall, subscription actions)
 
 ### 1.5 Location Data
 We use Google Places API to help you search for golf courses. This may involve:
@@ -82,8 +83,8 @@ When you join a group or share scores with a group:
 ### 4.2 Third-Party Service Providers
 We use the following third-party services that may have access to your data:
 
-- **Google Firebase** (Firestore, Authentication, Cloud Messaging)
-  - Used for: Data storage, user authentication, push notifications
+- **Google Firebase** (Firestore, Authentication, Cloud Messaging, Analytics)
+  - Used for: Data storage, user authentication, push notifications, analytics
   - Privacy Policy: https://firebase.google.com/support/privacy
   
 - **Google Places API**
@@ -98,13 +99,16 @@ We use the following third-party services that may have access to your data:
   - Used for: User authentication
   - Privacy Policy: https://policies.google.com/privacy
 
-### 4.3 Analytics and Crash Reporting (Future)
-We may implement analytics and crash reporting services in the future to:
-- Understand how users interact with the Service
-- Identify and fix technical issues
-- Improve app performance and user experience
+### 4.3 Analytics and Usage Tracking
+We use Firebase Analytics to understand how users interact with the Service and improve the app experience. This service collects:
+- **Event data**: User interactions with features (e.g., viewing paywall, clicking upgrade banners, subscription actions)
+- **Anonymized usage statistics**: General app usage patterns, feature adoption, and user flows
+- **Device information**: Device type, operating system version (for analytics purposes)
+- **IP address**: Collected by Firebase Analytics for geographic analysis (anonymized)
 
-These services may collect anonymized usage statistics and crash reports. We will update this Privacy Policy when such services are implemented.
+Analytics data is aggregated and anonymized. We do not use analytics to identify individual users or link analytics data to your personal account information. You cannot opt-out of analytics data collection, but you can contact us if you have concerns.
+
+We may implement crash reporting services in the future to identify and fix technical issues. We will update this Privacy Policy if such services are added.
 
 ### 4.4 Legal Requirements
 We may disclose your information if required by law or in response to valid requests by public authorities.
